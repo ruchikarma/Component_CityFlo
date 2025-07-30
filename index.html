@@ -1,46 +1,86 @@
-!<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Select Booking Type</title>
-  <link rel="stylesheet" href="styles.css" />
-</head>
-<body>
-  <main class="booking-container">
-    <h1>Select Booking Type</h1>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Select Booking Type</title>
+    <link href="styles.css" rel="stylesheet" />
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+  </head>
 
-    <div class="card">
-      <span class="badge ride">RIDE PACK</span>
-      <h2>Pack of rides</h2>
-      <ul>
-        <li>Cheapest rides for every travel schedule</li>
-        <li>Book ride anytime</li>
-        <li>Reschedule your bus timing for free</li>
-      </ul>
-      <div class="price">₹79/ride</div>
-      <button>Proceed</button>
-    </div>
+  <body>
+    <header class="topbar">
+      <span class="material-icons back-arrow">chevron_left</span>
+      <span>Select Booking Type</span>
+    </header>
 
-    <div class="card highlight">
-      <span class="badge flexi">FLEXI PASS</span>
-      <h2>Pre-booked rides</h2>
-      <ul>
-        <li>No daily booking hassle & preferred seat</li>
-        <li>Reschedule to any day, time for free or get full refund</li>
-      </ul>
-      <div class="price">Starting at ₹169/ride</div>
-      <button>Proceed</button>
-    </div>
+    <main class="booking-container">
+      <!-- Card 1 -->
+      <div class="card">
+        <div class="title-row">
+          <span class="badge ride">RIDE PACK</span>
+          <h2>Pack of rides</h2>
+        </div>
+        <ul class="feature-list">
+          <li>
+            <span class="icon">🚫</span> Cheapest rides for every travel
+            schedule
+          </li>
+          <li><span class="icon">📅</span> Book ride anytime</li>
+          <li>
+            <span class="icon">⏰</span> Reschedule your bus timing for free
+          </li>
+        </ul>
+        <div class="price-row">
+          <div class="price">₹79/ride</div>
+          <button class="proceed-button">Proceed</button>
+        </div>
+      </div>
 
-    <div class="card">
-      <h2>Book One-way ride</h2>
-      <ul>
-        <li>Free rescheduling, Cancel anytime</li>
-      </ul>
-      <div class="price">₹249</div>
-      <button>Proceed</button>
-    </div>
-  </main>
-</body>
+      <!-- Highlighted Flexi Pass Card -->
+      <div class="highlight-wrapper">
+        <div class="highlight-label">⭐ Best value for you</div>
+        <div class="card highlight">
+          <div class="title-row flexi-title">
+            <span class="badge flexi">FLEXI PASS</span>
+            <h2>Pre-booked rides</h2>
+          </div>
+          <ul class="feature-list">
+            <li>
+              <span class="icon">🪑</span> No daily booking hassle & preferred
+              seat
+            </li>
+            <li>
+              <span class="icon">📆</span> Reschedule to any day, time for free
+              or get full refund on cancellation
+            </li>
+          </ul>
+          <div class="price-row">
+            <div>
+              <div class="price small-label">Starting at</div>
+              <div class="price">₹169/ride</div>
+            </div>
+            <button class="proceed-button">Proceed</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Card 3 -->
+      <div class="card">
+        <h2>Book One-way ride</h2>
+        <ul class="feature-list">
+          <li>
+            <span class="icon">🕒</span> Free rescheduling, Cancel anytime
+          </li>
+        </ul>
+        <div class="price-row">
+          <div class="price">₹249</div>
+          <button class="proceed-button">Proceed</button>
+        </div>
+      </div>
+    </main>
+  </body>
 </html>
