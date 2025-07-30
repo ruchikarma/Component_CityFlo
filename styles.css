@@ -1,0 +1,96 @@
+body {
+  font-family: sans-serif;
+  margin: 0;
+  padding: 1rem;
+  background: #f9f9f9;
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.booking-container {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.card {
+  background: white;
+  border-radius: 10px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  padding: 1.5rem;
+  border-left: 6px solid transparent;
+}
+
+.card.highlight {
+  border-left-color: gold;
+  background: #fffbea;
+}
+
+.badge {
+  display: inline-block;
+  font-size: 0.75rem;
+  padding: 0.2rem 0.5rem;
+  border-radius: 5px;
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+}
+
+.badge.ride {
+  background-color: #800080;
+  color: white;
+}
+
+.badge.flexi {
+  background-color: #ffcc00;
+  color: #333;
+}
+
+.card h2 {
+  margin: 0.25rem 0 1rem;
+}
+
+.card ul {
+  list-style: none;
+  padding: 0;
+  margin-bottom: 1rem;
+}
+
+.card ul li {
+  margin-bottom: 0.5rem;
+}
+
+.price {
+  font-weight: bold;
+  margin-bottom: 1rem;
+  font-size: 1.2rem;
+}
+
+button {
+  padding: 0.6rem 1.2rem;
+  border: none;
+  background-color: #003366;
+  color: white;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #0055a5;
+}
+
+@media (min-width: 768px) {
+  .booking-container {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .card {
+    width: calc(33.33% - 2rem);
+  }
+}
