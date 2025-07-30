@@ -39,10 +39,10 @@
 
       .card h2 {
         margin: 0;
-        font-size: 1.1rem;
+        font-size: 1.05rem;
         color: #002b5b;
         display: inline;
-        font-weight: 700;
+        font-weight: 600;
       }
 
       .badge {
@@ -91,8 +91,8 @@
       .feature-list li {
         display: flex;
         align-items: center;
-        font-size: 0.95rem;
-        color: #555;
+        font-size: 0.92rem;
+        color: #666;
         margin-bottom: 0.6rem;
       }
 
@@ -108,8 +108,8 @@
       }
 
       .price {
-        font-size: 1.1rem;
-        font-weight: bold;
+        font-size: 1.15rem;
+        font-weight: 700;
         color: #111;
       }
 
@@ -120,12 +120,12 @@
       }
 
       .proceed-button {
-        padding: 0.5rem 1.2rem;
+        padding: 0.5rem 1.9rem;
         background-color: #fff;
         border: 1.5px solid #003366;
         border-radius: 999px;
         color: #003366;
-        font-weight: bold;
+        
         cursor: pointer;
         font-size: 0.95rem;
       }
